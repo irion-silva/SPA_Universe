@@ -1,0 +1,132 @@
+:root {
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fc-white: #FFFFFF;
+    --fc-link-light-gray: #C4C4CC;
+    --fc-text: #E1E1E6;
+    --fc-white: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background-image: url('../img/mountains-universe-1.png');
+}
+
+.ouniverso {
+    background-image: url('../img/mountains-universe-2.png');
+}
+
+.exploracao {
+    background-image: url('../img/mountains-universe-3.png');
+}
+
+body {
+    background: bottom center/cover no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-body);
+    transition: 0.2s ease-out;
+    min-height: 100vh;
+}
+
+nav {
+    padding: 4rem 0 4rem 7.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li:nth-child(1) {
+    margin-left: 4.3rem;
+}
+
+li + li {
+    margin-left: 5.3rem;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--fc-link-light-gray);
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+}
+
+.active {
+    color: var(--fc-white);
+    font-size: 2.4rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--fc-text)
+}
+
+button {
+    color: var(--fc-white);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 2px solid #FFF;
+    padding: 1.2rem 3.2rem;
+    margin: 2.4rem;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.home main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 17.2rem;
+}
+
+.ouniverso main, .exploracao main {
+    margin-left: 7.2rem;
+}
+
+.ouniverso h1, .exploracao h1 {
+        margin-top: 6.3rem;
+}
+
+.ouniverso p, .exploracao p { 
+    margin-top: 1.6rem;
+}
+
+p {
+    width: 64.8rem;
+    color: var(--fc-text);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    
+}
